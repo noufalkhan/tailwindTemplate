@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dark {
+  background-color: theme('colors.dark.background');
+  color: theme('colors.dark.text');
+}
+
+.light {
+  background-color: theme('colors.light.background');
+  color: theme('colors.light.text');
+}
