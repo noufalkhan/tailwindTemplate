@@ -1,0 +1,138 @@
+/* Base Button Styles */
+.btn {
+  @apply text-white rounded-md transition duration-200 ease-in-out transform; /* Base styles */
+}
+
+/* Clicking Effect (All Buttons) */
+.btn:active {
+  @apply scale-95 shadow-inner; /* Shrinks slightly with inner shadow on click */
+}
+
+/* Primary Button */
+.btn-primary {
+  @apply bg-light-primary hover:bg-light-primary/90 py-2 px-4;
+}
+.dark .btn-primary {
+  @apply bg-dark-primary hover:bg-dark-primary/90;
+}
+
+.btn-primary.outlined {
+  @apply border border-light-primary text-light-primary bg-transparent hover:bg-light-primary/10;
+}
+.dark .btn-primary.outlined {
+  @apply border border-dark-primary text-dark-primary bg-transparent hover:bg-dark-primary/10;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  @apply bg-light-secondary hover:bg-light-secondary/90 py-2 px-4;
+}
+.dark .btn-secondary {
+  @apply bg-dark-secondary hover:bg-dark-secondary/90;
+}
+
+.btn-secondary.outlined {
+  @apply border border-light-secondary text-light-secondary bg-transparent hover:bg-light-secondary/10;
+}
+.dark .btn-secondary.outlined {
+  @apply border border-dark-secondary text-dark-secondary bg-transparent hover:bg-dark-secondary/10;
+}
+
+/* Accent Button */
+.btn-accent {
+  @apply bg-light-accent hover:bg-light-accent/90 py-2 px-4;
+}
+.dark .btn-accent {
+  @apply bg-dark-accent hover:bg-dark-accent/90;
+}
+.btn-accent.outlined {
+  @apply border border-light-accent text-light-accent bg-transparent hover:bg-light-accent/10;
+}
+.dark .btn-accent.outlined {
+  @apply border border-dark-accent text-dark-accent bg-transparent hover:bg-dark-accent/10;
+}
+
+/* Muted Button */
+.btn-muted {
+  @apply bg-light-muted hover:bg-light-muted/90 py-2 px-4;
+}
+.dark .btn-muted {
+  @apply bg-dark-muted hover:bg-dark-muted/90;
+}
+.btn-muted.outlined {
+  @apply border border-light-muted text-light-muted bg-transparent hover:bg-light-muted/10;
+}
+.dark .btn-muted.outlined {
+  @apply border border-dark-muted text-dark-muted bg-transparent hover:bg-dark-muted/10;
+}
+
+/* Error Button */
+.btn-error {
+  @apply bg-light-error hover:bg-light-error/90 py-2 px-4;
+}
+.dark .btn-error {
+  @apply bg-dark-error hover:bg-dark-error/90;
+}
+.btn-error.outlined {
+  @apply border border-light-error text-light-error bg-transparent hover:bg-light-error/10;
+}
+.dark .btn-error.outlined {
+  @apply border border-dark-error text-dark-error bg-transparent hover:bg-dark-error/10;
+}
+
+/* Success Button */
+.btn-success {
+  @apply bg-light-success hover:bg-light-success/90 py-2 px-4;
+}
+.dark .btn-success {
+  @apply bg-dark-success hover:bg-dark-success/90;
+}
+.btn-success.outlined {
+  @apply border border-light-success text-light-success bg-transparent hover:bg-light-success/10;
+}
+.dark .btn-success.outlined {
+  @apply border border-dark-success text-dark-success bg-transparent hover:bg-dark-success/10;
+}
+
+/* Info Button */
+.btn-info {
+  @apply bg-light-info hover:bg-light-info/90 py-2 px-4;
+}
+.dark .btn-info {
+  @apply bg-dark-info hover:bg-dark-info/90;
+}
+.btn-info.outlined {
+  @apply border border-light-info text-light-info bg-transparent hover:bg-light-info/10;
+}
+.dark .btn-info.outlined {
+  @apply border border-dark-info text-dark-info bg-transparent hover:bg-dark-info/10;
+}
+
+
+
+/* Warning Button */
+.btn-warning {
+  @apply bg-light-warning hover:bg-light-warning/90 py-2 px-4;
+}
+.dark .btn-warning {
+  @apply bg-dark-warning hover:bg-dark-warning/90;
+}
+
+.btn-warning.outlined {
+  @apply border border-light-warning text-light-warning bg-transparent hover:bg-light-warning/10;
+}
+.dark .btn-warning.outlined {
+  @apply border border-dark-warning text-dark-warning bg-transparent hover:bg-dark-warning/10;
+}
+
+
+/* Size Variants */
+.btn-small {
+  @apply text-sm py-1 px-2;
+}
+.btn-medium {
+  @apply text-base py-2 px-4;
+}
+.btn-large {
+  @apply text-lg py-3 px-10;
+}

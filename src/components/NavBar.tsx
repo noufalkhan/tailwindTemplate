@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ThemeToggler from "./ThemeToggler";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,13 +10,15 @@ const Navbar = () => {
 
   return (
     <nav className="bg-light-background dark:bg-dark-background shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <a href="/" className="flex items-center text-lg font-semibold text-light-text dark:text-dark-text">
               My Logo
             </a>
           </div>
+          <div className="flex items-center gap-2">
           <div className="hidden md:flex items-center space-x-4">
             <a href="#" className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary">
               Home
@@ -29,6 +32,11 @@ const Navbar = () => {
             <a href="#" className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary">
               Contact
             </a>
+           
+          </div>
+          <div>
+          <ThemeToggler />
+          </div>
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={toggleMenu} className="text-light-text dark:text-dark-text focus:outline-none">

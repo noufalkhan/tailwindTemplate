@@ -2,21 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global Styles */
+
+
+/* Default Light Mode Styles */
 body {
-  transition: background-color 0.5s ease, color 0.5s ease;
+  @apply bg-light-background text-light-text; /* Default light mode background and text color */
 }
 
-html {
-  scroll-behavior: smooth;
+/* Dark Mode Styles */
+.dark body {
+  @apply bg-dark-background text-dark-text; /* Dark mode background and text color */
 }
 
-.dark {
-  background-color: theme('colors.dark.background');
-  color: theme('colors.dark.text');
+/* Card styles */
+.card {
+  @apply bg-light-card text-light-text; /* Light card styles */
 }
 
-.light {
-  background-color: theme('colors.light.background');
-  color: theme('colors.light.text');
+.dark .card {
+  @apply bg-dark-card text-dark-text; /* Dark card styles */
 }
+
+
+
+/* Utility Classes for Other Elements */
+.text-accent {
+  @apply text-light-accent dark:text-dark-accent; /* Accent color */
+}
+
+.bg-muted {
+  @apply bg-light-muted dark:bg-dark-muted; /* Muted background */
+}
+
+.text-muted {
+  @apply text-light-muted dark:text-dark-muted; /* Muted text */
+}
+
+/* Add more utility classes as needed */

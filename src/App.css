@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Button styles */
+.btn-primary {
+    @apply bg-light-primary text-white hover:bg-light-primary/90 py-2 px-4 rounded-md; /* Light primary button with padding and rounded corners */
+  }
+  
+  .dark .btn-primary {
+    @apply bg-dark-primary text-white hover:bg-dark-primary/90 py-2 px-4 rounded-md; /* Dark primary button with padding and rounded corners */
+  }
+  
+  
+  /* Outlined Button styles */
+  .btn-primary.outlined {
+    @apply border border-light-primary text-light-primary bg-transparent hover:bg-light-primary/10; /* Light outlined button */
+  }
+  
+  .dark .btn-primary.outlined {
+    @apply border border-dark-primary text-dark-primary bg-transparent hover:bg-dark-primary/10; /* Dark outlined button */
+  }
+  
