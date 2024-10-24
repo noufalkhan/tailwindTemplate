@@ -9,7 +9,7 @@ const Demo = () => {
 
       <div className="p-5">
         <p className="">Hello World</p>
-        <button className="btn btn-error outlined border-none outline-dashed btn-medium ">Outlined </button>
+        <button className="btn btn-error outlined border-none outline-dashed btn-medium ">Outline Button </button>
       </div>
     </div>
   )
